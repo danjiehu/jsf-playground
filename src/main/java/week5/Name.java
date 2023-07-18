@@ -4,10 +4,20 @@ public class Name {
 	
 	private String first;
 	private String last;
+	boolean canEdit; // default to false
 	
 	public Name(String first, String last) {
 		this.first = first;
 		this.last = last;
+	}
+	
+	// start of getters and setters
+	public boolean isCanEdit() {
+		return canEdit;
+	}
+	
+	public void setCanEdit(boolean canEdit) {
+		this.canEdit = canEdit;
 	}
 	
 	public String getFirst() {
@@ -23,7 +33,5 @@ public class Name {
 		this.last = last;
 	}
 	
-	
-
 
 } // end of class

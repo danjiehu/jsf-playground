@@ -37,6 +37,18 @@ public class TableData {
 		names.add(n3);
 	}
 	
+	public void saveAction() {
+		for(Name name:names) {
+			name.setCanEdit(false);
+		}
+	}
+	
+	// input a name object, set it to can edit once passed in
+	public void editName(Name name) {
+		name.setCanEdit(true);
+		// return null;
+	}
+	
 	// return the array list
 	public ArrayList<Name> getNames() {
 		return names;
